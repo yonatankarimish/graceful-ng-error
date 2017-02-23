@@ -1,0 +1,23 @@
+{
+  "name": "graceful-ng-error",
+  "homepage": "https://github.com/yonatankarimish/graceful-ng-error",
+  "authors": [
+    "Yonatan <yonatan@backbox.co>"
+  ],
+  "description": "nice looking form validation",
+  "main": "index.html",
+  "keywords": [
+    "angular",
+    "validation",
+    "error",
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

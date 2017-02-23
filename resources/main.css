@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline:none;
+}
+
+input, select{
+    width:200px;
+    display: block;
+    height:24px;
+    padding:5px;
+    margin:15px;
+}
+
+input.ng-invalid.ng-touched, select.ng-invalid.ng-touched,
+form.applyErr input.ng-invalid, form.applyErr select.ng-invalid{
+    border-color: red !important;
+    box-shadow: 0 0 8px pink;
+}

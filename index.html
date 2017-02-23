@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Graceful ng-error</title>
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="sources/app.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="resources/main.css" />
+    </head>
+    <body ng-app="app" ng-controller="graceController as graceCtrl">
+        <form name="graceCtrl.aForm" ng-class="{applyErr: graceCtrl.aForm.submitBtn.$touched}">
+            <input type="text" name="textTest" ng-model="graceCtrl.textTest" placeholder="text required" required />
+            <input type="number" name="numTest" ng-model="graceCtrl.numTest" placeholder="1-16" min="1" max="16" required/>
+            <input type="password" name="passTest" ng-model="graceCtrl.passTest" placeholder="8 character min" pattern=".{8,}" required>
+            <input type="submit" name="submitBtn" ng-model="graceCtrl.submitBtn" value="Submit" ng-click="graceCtrl.validate()"/>
+        </form>
+    </body>
+</html>
